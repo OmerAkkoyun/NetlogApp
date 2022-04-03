@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/splashFragment"
+    android:id="@+id/navigation_graph">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.xooicase.presentation.ui.splash.SplashFragment"
+        android:label="SplashFragment" >
+        <action
+            app:launchSingleTop="true"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true"
+            android:id="@+id/action_splashFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.xooicase.presentation.ui.details.DetailsFragment"
+        android:label="DetailsFragment" >
+        <action
+            android:id="@+id/action_detailsFragment_to_loadImageFragment"
+            app:destination="@id/loadImageFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/loadImageFragment"
+        android:name="com.example.xooicase.presentation.ui.load_image.LoadImageFragment"
+        android:label="fragment_load_image"
+        tools:layout="@layout/fragment_load_image" />
+
+
+</navigation>

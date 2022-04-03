@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        tools:context=".presentation.ui.load_image.LoadImageFragment">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/load_image_title"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imgBtnClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|top"
+            android:background="@null"
+            android:layout_marginEnd="@dimen/dp_xlarge"
+            android:layout_marginTop="36dp"
+            android:src="@drawable/close_icon"
+            android:translationZ="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/imgPhotoRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_margin="@dimen/dp_small"
+            android:background="@color/black"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/trailer_info"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgPhotoRecyclerView" />
+
+
+        <ImageView
+            android:id="@+id/imgvChange"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="30dp"
+            android:src="@drawable/change_icon"
+            app:layout_constraintEnd_toStartOf="@+id/imgvSend"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <ImageView
+            android:id="@+id/imgvSend"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="52dp"
+            android:src="@drawable/send_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+        <ImageView
+            android:id="@+id/imgvAdd"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/add_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgvSend"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:layout_marginTop="@dimen/dp_xsmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/redraw"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/imgvChange"
+            app:layout_constraintStart_toStartOf="@+id/imgvChange"
+            app:layout_constraintTop_toBottomOf="@+id/imgvChange" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_xsmall"
+            android:text="@string/send_btn_text"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/imgvSend"
+            app:layout_constraintStart_toStartOf="@+id/imgvSend"
+            app:layout_constraintTop_toBottomOf="@+id/imgvSend" />
+
+
+        <TextView
+            android:layout_marginTop="@dimen/dp_xsmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_btn_text"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/imgvAdd"
+            app:layout_constraintStart_toStartOf="@+id/imgvAdd"
+            app:layout_constraintTop_toBottomOf="@+id/imgvAdd" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

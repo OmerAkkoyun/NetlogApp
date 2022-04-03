@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">XooiCase</string>
+
+
+    <!-- details page edittext hints -->
+    <string name="weight_type">Yük Tipi</string>
+    <string name="load_type">Yükleme Tipi</string>
+    <string name="count_of_uploads">Yükleme Adedi</string>
+    <string name="total_weight">Yüklerin Kilosu</string>
+    <string name="load_time">Yükleme Saati</string>
+    <string name="volume">Hacim</string>
+    <string name="customs_place">Çıkış Gümrük</string>
+
+    <string name="loading_point_button_text">YÜKLEME NOKTASINA GELDİM</string>
+    <string name="load_flow_text">YÜKLEME AKIŞI</string>
+    <string name="load_address_limit_text">Yükleme adresi sınırlarındasın</string>
+
+    <!-- upload image page default values  -->
+    <string name="upload_image">Yükleme Resmi</string>
+    <string name="trailer_cover_alert">Dorse kapak açık olmasına dikkat edin!</string>
+    <string name="redraw">Yeniden çek</string>
+    <string name="send_btn_text">Gönder</string>
+    <string name="add_btn_text">Ekle</string>
+
+
+    <!-- map permission alert  -->
+    <string name="map_permission_settings_alert">Konumu bilgileriniz için lütfen "Ayarlar" ekranından konum ayarlarını etkin hale getirin</string>
+    <string name="map_permission_info">Konumu bilgileriniz için lütfen konum ayarlarını etkin hale getirin</string>
+
+    <!-- load photo fragment  -->
+    <string name="load_image_title">Yükleme Resmi</string>
+    <string name="trailer_info">Dorse kapağının açık olmasına dikkat edin!</string>
+    <string name="camera_permission_info">Resim yükleyebilmek için lütfen izinleri etkinleştirin</string>
+
+
+
+</resources>
